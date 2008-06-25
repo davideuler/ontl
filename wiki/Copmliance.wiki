@@ -1,0 +1,62 @@
+#summary Copmliance with the C++ Standard Library
+
+= 17.4.1.3 Freestanding implementations =
+
+2 A freestanding implementation has an implementation-defined set of headers. This set shall include at least the following
+headers:
+||18.1 Types ||`<cstddef>`||
+||18.2 Implementation properties ||`<limits>`||
+||18.4 Start and termination ||`<cstdlib>`||
+||18.5 Dynamic memory management ||`<new>`||
+||18.6 Type identification ||`<typeinfo>`||
+||18.7 Exception handling ||`<exception>`||
+||18.8 Other runtime support ||`<cstdarg>`||
+
+3 The supplied version of the header <cstdlib> shall declare at least the functions `abort()`, `atexit()`, and `exit()`
+----
+C++ Library Headers
+
+*<algorithm>
+*<array> 
+*<bitset> 
+*<complex> 
+*<datetime> 
+*<deque> 
+*<exception> 
+*<fstream> 
+*<functional> 
+*<iomanip> 
+*<ios> 
+*<iosfwd> 
+*<iostream> 
+*<istream> 
+*<iterator> 
+*<limits> 
+*<list> 
+*<locale> 
+*<map> 
+*<memory> 
+*<mutex> 
+*<new> 
+*<numeric> 
+*<ostream> 
+*<queue> 
+*<random> 
+*<regex> 
+*<set> 
+*<sstream> 
+*<stack> 
+*<stdexcept> 
+*<streambuf> 
+*<string> 
+*<strstream> 
+*<system_error> 
+*<threads>
+*<tuple>
+*<typeinfo>
+*<type_traits>
+*<unordered_map>
+*<unordered_set>
+*<utility>
+*<valarray>
+*<vector>
