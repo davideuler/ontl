@@ -1,0 +1,53 @@
+#summary This style guide contains documenting style guide for NTL headers.
+#labels Phase-Design,Phase-Documentation,Style
+
+= Introduction =
+
+It contains following rules of documentation format:
+ * file header 
+ * groups
+ * types
+ * classes
+ * class members
+ * etc.
+
+= Documentation formatting rules =
+
+== File header ==
+
+ File header consists of comment block which contains doxygen *file* and *brief* commands. The brief block contains long and short names of the Standart chapter with its number. Number and short name must be placed into square brackets. Example:
+{{{
+/**\file*********************************************************************
+ *                                                                     \brief
+ *  Long name [1.11 short.name]
+ *
+ ****************************************************************************
+ */
+}}}
+
+
+== Groups ==
+=== 1. Standart chapters grouping ===
+
+ Standart issues can be grouped in documentation by grouping doxygen commands: *defgroup* or *addtogroup*, *ingroup*.
+
+_Here I don't know about standart style. There are few examples, and we must to standardize it:_
+{{{
+/**\defgroup  lib_utilities *** 20 General utilities library [utilities] *****
+ *
+ *    Components used by other elements of the Standard C + + library.
+ *@{
+ */
+}}}
+{{{
+/**\defgroup  lib_utility ************** Utility components [20.2] **********
+ *
+ *    basic function and class templates that are used throughout
+ *    the rest of the library.
+ *@{
+ */
+}}}
+
+_Questions:
+ # How to select a group name? From the main short name? (Which name must be used: `lib_utilities` or `utilities`?)
+ # Where chapter number must be placed, before the chapter long name or in the brackets? Or before in Standart chapters and in square brackets in Standart paragraphs?
