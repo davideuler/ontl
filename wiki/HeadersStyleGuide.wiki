@@ -1,5 +1,5 @@
 #summary This style guide contains documenting style guide for NTL headers.
-#labels Phase-Design,Phase-Documentation,Style
+#labels Phase-Design,Phase-Documentation,Phase-Implementation,Style
 
 = Introduction =
 
