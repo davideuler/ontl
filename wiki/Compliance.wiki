@@ -29,9 +29,12 @@ TODO: syncronize descriptions with current code base.
 || # || <array>     || As in TR1, no tuple interface yet. ||
 || # || <bitset>    || In x64 branch only. ||
 || # || <chrono>    || In x64 branch only. ||
+|| # || <codecvt> ||
+|| # || <condition_variable> ||
 || # || <complex>   || Not planned in the near future. ||
 || # || <deque> ||
 || # || <exception> || Incomplete (lack of C++0x features). ||
+|| # || <forward_list> ||
 || # || <fstream>   ||
 || # || <functional> || As in C++03, no `bind` & `function`. ||
 || # || <initializer_list> ||
@@ -87,6 +90,7 @@ TODO: syncronize descriptions with current code base.
 || # || <csetjmp> ||
 || # || <csignal> ||
 || # || <cstdarg>   || Complete. ||
+|| # || <cstdatomic> ||
 || # || <cstdbool> ||
 || # || <cstddef>   || No `NULL` macro, use `nullptr`. ||
 || # || <cstdio> ||
