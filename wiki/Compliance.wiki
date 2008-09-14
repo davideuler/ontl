@@ -32,7 +32,7 @@ TODO: syncronize descriptions with current code base.
 || # || <complex>   || Not planned in the near future. ||
 || # || <deque> || 
 || # || <exception> || Incomplete (lack of C++0x features). ||
-|| # || <fstream>   *
+|| # || <fstream>   || * ||
 || # || <functional> || As in C++03, no `bind` & `function`. ||
 || # || <initializer_list> || 
 || # || <iomanip>   || Complete (see iosfwd)
@@ -49,7 +49,7 @@ TODO: syncronize descriptions with current code base.
 || # || <mutex> || 
 || # || <new>       || Complete
 || # || <numeric>   || Only `std::accumulate`. ||
-|| # || <ostream>   *
+|| # || <ostream>   || * ||
 || # || <queue>     || In x64 branch only. ||
 || # || <random> || 
 || # || <ratio>     || In x64 branch only. ||
