@@ -35,7 +35,7 @@ TODO: syncronize descriptions with current code base.
 || # || <fstream>   || * ||
 || # || <functional> || As in C++03, no `bind` & `function`. ||
 || # || <initializer_list> || 
-|| # || <iomanip>   || Complete (see iosfwd)
+|| # || <iomanip>   || Complete (see iosfwd) ||
 || # || <ios>       || No `ios_base` callbacks, `locale`. ||
 || # || <iosfwd>    || Complete, but no benefins as I/O streams are in development. ||
 || # || <iostream> || 
@@ -47,7 +47,7 @@ TODO: syncronize descriptions with current code base.
 || # || <map>       || As RB tree now. ||
 || # || <memory>    || `unique_ptr<>` as in N2691, experemental `shared_ptr<>` based on linked list (not thread safe). ||
 || # || <mutex> || 
-|| # || <new>       || Complete
+|| # || <new>       || Complete ||
 || # || <numeric>   || Only `std::accumulate`. ||
 || # || <ostream>   || * ||
 || # || <queue>     || In x64 branch only. ||
