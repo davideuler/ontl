@@ -20,9 +20,9 @@ TODO: syncronize descriptions with current code base.
 ==C++ Features requiring runtime support==
  # `try`/`catch` works even in kernel mode with a few limitations.
  # `dynamic_cast<>` included x64 branch only.
- # Static object ctors/dtors included x64 branch only.
+ # Static object ctors/dtors support included x64 branch only.
  # `thread_local` not supported yet.
- # ...
+ # floats - FPU flags not compatible to Standard.
 
 ==C++ Library Headers==
  # <algorithm> - About 45%.
@@ -33,22 +33,22 @@ TODO: syncronize descriptions with current code base.
  # <deque> 
  # <exception> - Incomplete (lack of C++0x features).
  # <fstream>   *
- # <functional> - As in C++03, no bind & function.
+ # <functional> - As in C++03, no `bind` & `function`.
  # <initializer_list>
  # <iomanip>   - Complete (see iosfwd)
- # <ios>       - No ios_base callbacks, locale.
+ # <ios>       - No `ios_base` callbacks, `locale`.
  # <iosfwd>    - Complete, but no benefins as I/O streams are in development.
  # <iostream>
  # <istream>   - Incomplete.
  # <iterator>  - Complete (?) as in current Standard.
- # <limits>    - Complete except of numeric_limits<long double>::infinity() for ICC (10 bytes in size)
- # <list>      - No splice, merge. Redisign is planned to get O(n) size().
+ # <limits>    - Complete except of `numeric_limits<long double>::infinity()` & Co for ICC (10 bytes in size).
+ # <list>      - No `splice`, `merge`. Redisign is planned to trade O(n) `size()`.
  # <locale>    - Incomplete.
  # <map>       - As RB tree now.
- # <memory>    - unique_ptr<> as in N2691, experemental shared_ptr<> based on linked list.
+ # <memory>    - `unique_ptr<>` as in N2691, experemental `shared_ptr<>` based on linked list (not thread safe).
  # <mutex>
- # <new>       - Incomplete
- # <numeric>   - Only std::accumulate.
+ # <new>       - Complete
+ # <numeric>   - Only `std::accumulate`.
  # <ostream>   *
  # <queue>     - In x64 branch only.
  # <random> 
@@ -56,9 +56,9 @@ TODO: syncronize descriptions with current code base.
  # <regex> 
  # <set>       - In x64 branch only.
  # <sstream>   - Incomplete.
- # <stack>     - As in C++03 but on top of vector.
+ # <stack>     - As in C++03 but on top of `vector`.
  # <stdexcept> - Complete.
- # <streambuf> - As in C++03 (no swap).
+ # <streambuf> - As in C++03 (no `swap`).
  # <string>    - Missed few members and I/O support.
  # <strstream> - Complete.
  # <system_error> 
@@ -68,7 +68,7 @@ TODO: syncronize descriptions with current code base.
  # <type_traits> - Complete (N2723). Requires MSVC 2005 or compatible compiler.
  # <unordered_map>
  # <unordered_set>
- # <utility>   - No forward/move.
+ # <utility>   - No `forward`/`move`.
  # <valarray>
  # <vector>    - Note stl-exception-safety branch.
 
@@ -88,11 +88,11 @@ TODO: syncronize descriptions with current code base.
  # <csignal> 
  # <cstdarg>   - Complete.
  # <cstdbool> 
- # <cstddef>   - No NULL macro, use std::nullptr.
+ # <cstddef>   - No `NULL` macro, use `nullptr`.
  # <cstdio> 
  # <cstdint> 
- # <cstdlib>   - FILE supports only binary mode. No atexit yet. No buffer-overflowing stuff included.
- # <cstring>   - No strdup.
+ # <cstdlib>   - `FILE` supports only binary mode. `atexit` in x64 branch only. No buffer-overflowing stuff included.
+ # <cstring>   - No `strdup`.
  # <ctgmath>   - None as ccomplex.
  # <ctime> 
  # <cuchar>
