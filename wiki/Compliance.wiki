@@ -27,8 +27,8 @@ TODO: syncronize descriptions with current code base.
 ==C++ Library Headers==
 || # || <algorithm> || About 45%. ||
 || # || <array>     || As in TR1, no tuple interface yet. ||
-|| # || <bitset>    || In x64 branch only. ||
-|| # || <chrono>    || In x64 branch only. ||
+|| # || <bitset>    || In x64 branch only; tested ||
+|| # || <chrono>    || In x64 branch only; tested ||
 || # || <codecvt> ||
 || # || <condition_variable> ||
 || # || <complex>   || Not planned in the near future. ||
@@ -47,17 +47,17 @@ TODO: syncronize descriptions with current code base.
 || # || <limits>    || Complete except of `numeric_limits<long double>::infinity()` & Co for ICC (10 bytes in size). ||
 || # || <list>      || No `splice`, `merge`. Redisign is planned to trade O(n) `size()`. ||
 || # || <locale>    || Incomplete. ||
-|| # || <map>       || As RB tree now. ||
-|| # || <memory>    || `unique_ptr<>` as in N2691, experemental `shared_ptr<>` based on linked list (not thread safe). ||
+|| # || <map>       || As RB tree now; untested ||
+|| # || <memory>    || `unique_ptr<>` as in N2691, experemental `shared_ptr<>` based on linked list (not thread safe); untested. ||
 || # || <mutex> ||
 || # || <new>       || Complete ||
 || # || <numeric>   || Only `std::accumulate`. ||
 || # || <ostream>   ||
 || # || <queue>     || In x64 branch only. ||
 || # || <random> ||
-|| # || <ratio>     || In x64 branch only. ||
+|| # || <ratio>     || In x64 branch only; tested. ||
 || # || <regex> ||
-|| # || <set>       || In x64 branch only. ||
+|| # || <set>       || In x64 branch only; untested. ||
 || # || <sstream>   || Incomplete. ||
 || # || <stack>     || As in C++03 but on top of `vector`. ||
 || # || <stdexcept> || Complete. ||
@@ -68,12 +68,12 @@ TODO: syncronize descriptions with current code base.
 || # || <threads> ||
 || # || <tuple> ||
 || # || <typeinfo>  || Copmlete, but name demangling implemented in x64 branch only (not required by Standard). ||
-|| # || <type_traits> || Complete (N2723). Requires MSVC 2005 or compatible compiler. ||
+|| # || <type_traits> || Almost complete (N2723). Requires MSVC 2005 or compatible compiler. ||
 || # || <unordered_map> ||
 || # || <unordered_set> ||
 || # || <utility>   || No `forward`/`move`. ||
 || # || <valarray> ||
-|| # || <vector>    || Note stl-exception-safety branch. ||
+|| # || <vector>    || Note about stl-exception-safety branch. ||
 
 ==C++ Headers for C Library Facilities==
 || # || <cassert>   || Complete. ||
