@@ -12,7 +12,7 @@ TODO: intro.
  * Intel C++ 11.0
  * Codegear C++ 2009 (v6.16) 
 
-Also, there are plans to support a GCC 4.4 (C++ standard library only).
+There are also plans for GCC 4.4 support (C++ standard library only).
 
 
 
@@ -30,7 +30,7 @@ Supported (_fully_?).
 
 === Intel C++ 10.0 ===
 
-It's compatible to the MSVC2005 (_and 2008_?), so it fully supported except 10 bytes size `double` type.
+It's compatible with the MSVC2005 (_and 2008_?), so it fully supported except 10 bytes size `double` type.
 
 === Intel C++ 11.0 ===
 
