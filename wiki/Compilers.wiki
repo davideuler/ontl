@@ -1,0 +1,45 @@
+#summary Supported compilers.
+#labels Phase-Requirements,Phase-Implementation,Phase-Support
+
+= Introduction =
+
+TODO: intro.
+
+== Supported compilers ==
+ * MSVC 2005 SP1 (v14.00.50727) or newer 
+ * MSVC 2010 CTP (v16)
+ * Intel C++ 10.0 (or older?) or newer
+ * Intel C++ 11.1 (East Mill)
+ * Codegear C++ 2009 (v6.16) 
+
+Also, there are plans to support a GCC 4.4 (C++ standard library only).
+
+
+
+= Details =
+
+=== MSVC 2005 ===
+
+Fully supported, but specific C++0x features are unavailable.
+
+=== MSVC 2010 ===
+
+It is a [http://go.microsoft.com/fwlink/?LinkId=129231 CTP build], which have [http://blogs.msdn.com/vcblog/archive/2008/10/28/lambdas-auto-and-static-assert-c-0x-features-in-vc10-part-1.aspx four C++0x compiler features] (`static_assert`, `auto`, lambdas, rvalues).
+
+Supported (_fully_?).
+
+=== Intel C++ 10.0 ===
+
+It's compatible to the MSVC2005 (_and 2008_?), so it fully supported except 10 bytes size `double` type.
+
+=== Intel C++ 11.1 ===
+
+It is a beta of the new Intel C++ compiler which would have more C++0x [http://www.intel.com/software/products/compilers/docs/clin/main_cls/copts/ccpp_options/option_std.htm specific features] (currently `static_assert`, `auto`, lambdas, extern templates, `decltype`).
+
+Supported as MSVC2005.
+
+=== Codegear C++ Builder 2009 ===
+
+New compiler of the C++ Builder which haves a [http://docs.google.com/View?docid=dgq8z6h7_5fn4t5cmp lot of C++0x features] ([http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2249.html extended unicode character types] (UTF-16 and UTF-32), `alignof`, `static_assert`, `decltype`, strongly typed enums, extern templates and rvalues).
+
+Currently it supported partially (headers only, w/o runtime).
