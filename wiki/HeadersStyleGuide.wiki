@@ -31,7 +31,8 @@ It contains following rules of documentation format:
 
  Standart issues can be grouped in documentation by grouping doxygen commands: *defgroup* or *addtogroup*, *ingroup*.
 
-_Here I don't know about standart style. There are few examples, and we must to standardize it:_
+Chapter groups called as in Standard:
+
 {{{
 /**\defgroup  lib_utilities *** 20 General utilities library [utilities] *****
  *
@@ -39,15 +40,3 @@ _Here I don't know about standart style. There are few examples, and we must to 
  *@{
  */
 }}}
-{{{
-/**\defgroup  lib_utility ************** Utility components [20.2] **********
- *
- *    basic function and class templates that are used throughout
- *    the rest of the library.
- *@{
- */
-}}}
-
-_Questions:
- # How to select a group name? From the main short name? (Which name must be used: `lib_utilities` or `utilities`?)
- # Where chapter number must be placed, before the chapter long name or in the brackets? Or before in Standart chapters and in square brackets in Standart paragraphs?
