@@ -44,6 +44,6 @@ It supported only in [http://ontl.googlecode.com/svn/branches/stlx STLx] branch 
 
 === GCC ===
 
-GCC's C++ Frontend have an [http://gcc.gnu.org/projects/cxx0x.html experimental C++0x support] (in 4.3+ version). Compilers prior to 4.3 isn't supported due to they don't have a special type traits support.
+GCC's C++ Frontend have an [http://gcc.gnu.org/projects/cxx0x.html experimental C++0x support] (in 4.3+ version). Compilers prior to 4.3 isn't supported due to they don't have special type traits support.
 
 It fully supported only in [http://ontl.googlecode.com/svn/branches/stlx STLx] branch with the external C runtime library.
