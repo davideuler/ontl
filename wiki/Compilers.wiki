@@ -11,9 +11,7 @@ TODO: intro.
  * Intel C++ 10.0 (or older?) or newer
  * Intel C++ 11.0
  * Codegear C++ 2009 (v6.16) 
-
-There are also plans for GCC 4.4 support (C++ standard library only).
-
+ * GCC 4.3 or newer
 
 
 = Details =
@@ -42,4 +40,10 @@ Supported as MSVC2005.
 
 New compiler of the C++ Builder which haves a [http://docs.google.com/View?docid=dgq8z6h7_5fn4t5cmp lot of C++0x features] ([http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2249.html extended unicode character types] (UTF-16 and UTF-32), `alignof`, `static_assert`, `decltype`, strongly typed enums, extern templates and rvalues).
 
-Currently it supported partially (headers only, w/o runtime).
+It supported only in [http://ontl.googlecode.com/svn/branches/stlx STLx] branch with the external runtime.
+
+=== GCC ===
+
+GCC's C++ Frontend have an [http://gcc.gnu.org/projects/cxx0x.html experimental C++0x support].
+
+It fully supported only in [http://ontl.googlecode.com/svn/branches/stlx STLx] branch with the external C runtime library.
