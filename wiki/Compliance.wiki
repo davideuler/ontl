@@ -37,6 +37,7 @@ TODO: syncronize descriptions with current code base.
 || # || <forward_list> || In x64 branch only; tested; incomplete (no sort) ||
 || # || <fstream>   ||
 || # || <functional> || As in C++03, without `bind`, `function`, refererence_closure, hashes ||
+|| # || <future>    || 
 || # || <initializer_list> || No compilers to support it (except GCC 4.4). ||
 || # || <iomanip>   || Complete (see iosfwd) ||
 || # || <ios>       || No `ios_base` callbacks, `locale`. ||
