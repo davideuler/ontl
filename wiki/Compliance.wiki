@@ -29,7 +29,7 @@ TODO: syncronize descriptions with current code base.
 || # || <array>     || Complete. ||
 || # || <bitset>    || In x64 branch only; tested ||
 || # || <chrono>    || In x64 branch only; tested ||
-|| # || <codecvt> ||
+|| # || <codecvt> || Work in progress ||
 || # || <condition_variable> ||Work in progress ||
 || # || <complex>   || Not planned in the near future. ||
 || # || <deque> ||
@@ -42,28 +42,28 @@ TODO: syncronize descriptions with current code base.
 || # || <iomanip>   || Complete (see iosfwd) ||
 || # || <ios>       || No `ios_base` callbacks, `locale`. ||
 || # || <iosfwd>    || Complete, but no benefins as I/O streams are in development. ||
-|| # || <iostream> ||
+|| # || <iostream> || Work in progress ||
 || # || <istream>   || Incomplete. ||
 || # || <iterator>  || Complete. ||
 || # || <limits>    || Complete except of `numeric_limits<long double>::infinity()` & Co for ICC (10 bytes in size). ||
 || # || <list>      || No `splice`, `merge`. Redesign is planned to trade O(n) `size()`. ||
 || # || <locale>    || Incomplete. ||
 || # || <map>       || As RB tree now; untested ||
-|| # || <memory>    || Incomplete. ||
+|| # || <memory>    || Incomplete (no scoped_allocator). ||
 || # || <mutex> || In x64 branch only. ||
 || # || <new>       || Complete ||
 || # || <numeric>   || Only `std::accumulate`. ||
-|| # || <ostream>   ||
+|| # || <ostream>   || Almost complete (no signed chars) ||
 || # || <queue>     || In x64 branch only. ||
-|| # || <random> ||
+|| # || <random> || Work in progress ||
 || # || <ratio>     || In x64 branch only; tested. ||
 || # || <regex> ||
 || # || <set>       || In x64 branch only; untested. ||
 || # || <sstream>   || Incomplete. ||
 || # || <stack>     || As in C++03 but on top of `vector`. ||
 || # || <stdexcept> || Complete. ||
-|| # || <streambuf> || As in C++03 (no `swap`). ||
-|| # || <string>    || Missed few members and I/O support. ||
+|| # || <streambuf> || Complete. ||
+|| # || <string>    || Missed few members (replace()) ||
 || # || <strstream> || Complete. ||
 || # || <system_error> || In x64 branch, native ||
 || # || <threads> || Work in progress ||
