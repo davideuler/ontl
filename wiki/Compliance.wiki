@@ -24,7 +24,7 @@ TODO: syncronize descriptions with current code base.
  # `thread_local` not supported yet.
  # floats - FPU flags not compatible to Standard.
 
-==C++ Library Headers==
+==C++ Library Headers (§17.6.2.3/6) ==
 || # || <algorithm> || About 45%. ||
 || # || <array>     || Complete. ||
 || # || <bitset>    || In x64 branch only; tested ||
@@ -76,7 +76,7 @@ TODO: syncronize descriptions with current code base.
 || # || <valarray> ||
 || # || <vector>    || Note about stl-exception-safety branch. ||
 
-==C++ Headers for C Library Facilities==
+==C++ Headers for C Library Facilities (§17.6.2.3/7)==
 || # || <cassert>   || Complete. ||
 || # || <ccomplex>  || Not planned. ||
 || # || <cctype> ||
