@@ -1,6 +1,8 @@
 #summary Compliance with the C++ Standard Library
 #labels Featured,Phase-Requirements
 
+<wiki:toc max_depth="10" />
+
 = 17.4.1.3 Freestanding implementations =
 
 2 A freestanding implementation has an implementation-defined set of headers. This set shall include at least the following
@@ -103,3 +105,27 @@ TODO: syncronize descriptions with current code base.
 || # || <cuchar> || Incomplete. ||
 || # || <cwchar>    || Incomplete. ||
 || # || <cwctype> || Compliance ||
+
+
+= Technical Report on C++ Library extensions =
+
+== Technicsl Report 1 ==
+
+[http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2005/n1836.pdf Draft]
+
+The technical report describes extensions to the C++ standard library that is described in the International Standard for the C++ programming language. Almost all library components from it are moved to the C++0x Standard.
+
+NTL contains a following separate components, which are based on TR1:
+|| # || 2.2 Smart pointers || [http://code.google.com/p/ontl/source/browse/branches/x64/ntl/stlx/ext/tr1/smart_ptr_tr1.hxx <tr1/smart_ptr.hxx>] ||
+
+
+== Technical Report 2 ==
+
+[http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2006/n2034.htm C++0x Standard Library wishlist]
+
+The TR2 was not published yet, but you can find C++0x Library extensions in the wishlist.
+
+NTL contains a following separate components, which are based on TR2:
+|| # || [http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2006/n1975.html Filesystem Library Proposal] || [http://code.google.com/p/ontl/source/browse/branches/x64/ntl/stlx/ext/tr2/filesystem.hxx <tr2/filesystem.hxx>] ||
+|| # || [http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2006/n2101.html Hierarchical Data Structures] || planned ||
+|| # || [http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2006/n2054.pdf Networking Library Proposal] || planned for KM ||
