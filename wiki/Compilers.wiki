@@ -1,5 +1,6 @@
 #summary Supported compilers.
 #labels Phase-Requirements,Phase-Implementation,Phase-Support
+<wiki:toc max_depth="10" />
 
 = Introduction =
 
