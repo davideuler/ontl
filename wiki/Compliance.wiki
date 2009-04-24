@@ -20,11 +20,17 @@ headers:
 TODO: syncronize descriptions with current code base.
 
 ==C++ Features requiring runtime support==
- # `try`/`catch` works even in kernel mode with a few limitations.
- # `dynamic_cast<>` included x64 branch only.
- # Static object ctors/dtors support included x64 branch only.
+ # `try`/`catch` works even in kernel mode with a few limitations ([http://code.google.com/p/ontl/source/browse/branches/x64/ntl/rtl/ehsup.asm ehsup.asm], [http://code.google.com/p/ontl/source/browse/branches/x64/ntl/rtl/safeseh.asm safeseh.asm], [http://code.google.com/p/ontl/source/browse/branches/x64/ntl/rtl/eh.cpp eh.cpp]).
+ # Runtime type info and `dynamic_cast<>` ([http://code.google.com/p/ontl/source/browse/branches/x64/ntl/rtl/rtti.cpp rtti.cpp]).
+ # Static object ctors/dtors support ([http://code.google.com/p/ontl/source/browse/branches/x64/ntl/rtl/crt.cpp crt.cpp]).
+ # I/O Streams support ([http://code.google.com/p/ontl/source/browse/branches/x64/ntl/rtl/iostream.cpp iostream.cpp]; [http://code.google.com/p/ontl/source/browse/branches/x64/ntl/rtl/wchar_mask_data.cpp wchar_mask_data.cpp] for `wchar_t` specializations).
+ # System error support ([http://code.google.com/p/ontl/source/browse/branches/x64/ntl/rtl/syserr.cpp syserr.cpp]).
  # `thread_local` not supported yet.
  # floats - FPU flags not compatible to Standard.
+
+To enable the different runtime features, include the corresponding [http://code.google.com/p/ontl/source/browse/branches/x64/ntl/rtl/ ntl/rtl] files in the build list or project file.
+
+
 
 ==C++ Library Headers (§17.6.2.3/6) ==
 || # || <algorithm> || About 45%. ||
