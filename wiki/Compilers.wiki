@@ -23,19 +23,17 @@ Fully supported, but specific C++0x features are unavailable.
 
 === MSVC 2010 ===
 
-It is a [http://go.microsoft.com/fwlink/?LinkId=129231 CTP build], which have [http://blogs.msdn.com/vcblog/archive/2008/10/28/lambdas-auto-and-static-assert-c-0x-features-in-vc10-part-1.aspx four C++0x compiler features] (`static_assert`, `auto`, lambdas, rvalues).
+It is a [http://go.microsoft.com/fwlink/?LinkId=129231 CTP build], which have [http://blogs.msdn.com/vcblog/archive/2008/10/28/lambdas-auto-and-static-assert-c-0x-features-in-vc10-part-1.aspx four C++0x compiler features] (`static_assert`, `auto`, lambdas, rvalues), and it will have the `decltype` keyword in the next beta version.
 
-Supported (_fully_?).
+Supported.
 
 === Intel C++ 10.0 ===
 
-It's compatible with the MSVC2005 (_and 2008_?), so it fully supported except 10 bytes size `double` type.
+It's compatible with the MSVC2005 (_and 2008_?), so it fully supported except 10 bytes size `double` type (disabled by default).
 
 === Intel C++ 11.0 ===
 
-It is a newest C++ compiler from Intel which have a some C++0x [http://www.intel.com/software/products/compilers/docs/clin/main_cls/copts/ccpp_options/option_std.htm specific features] (e.g. `static_assert`, `auto`, lambdas, extern templates, `decltype`).
-
-Supported as MSVC2005.
+It is a newest C++ compiler from Intel which have a some C++0x [http://www.intel.com/software/products/compilers/docs/clin/main_cls/copts/ccpp_options/option_std.htm specific features] (e.g. `static_assert`, `auto`, lambdas, extern templates, `decltype`), but not rvalue references, so it supported as MSVC2005/2008.
 
 === Codegear C++ Builder 2009 ===
 
