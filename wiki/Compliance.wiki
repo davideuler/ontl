@@ -13,7 +13,7 @@ headers:
 ||18.5 Dynamic memory management ||`<new>`||
 ||18.6 Type identification ||`<typeinfo>`||
 ||18.7 Exception handling ||`<exception>`||
-||18.8 Other runtime support ||`<cstdarg>`||
+||18.9 Other runtime support ||`<cstdarg>`||
 
 3 The supplied version of the header <cstdlib> shall declare at least the functions `abort()`, `atexit()`, and `exit()`
 ----
