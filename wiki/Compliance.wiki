@@ -40,10 +40,10 @@ To enable the different runtime features, include the corresponding [http://code
 || # || <codecvt> || Work in progress ||
 || # || <condition_variable> ||Work in progress ||
 || # || <complex>   || Not planned in the near future. ||
-|| # || <deque> ||
+|| # || <deque> || ||
 || # || <exception> || Incomplete (lack of C++0x features). ||
 || # || <forward_list> || In x64 branch only; tested; incomplete (no sort) ||
-|| # || <fstream>   ||
+|| # || <fstream>   || ||
 || # || <functional> || Incomplete (no `bind` and refererence_closure) ||
 || # || <future>    || Work in progress ||
 || # || <initializer_list> || No compilers to support it (except GCC 4.4). ||
@@ -65,7 +65,7 @@ To enable the different runtime features, include the corresponding [http://code
 || # || <queue>     || In x64 branch only. ||
 || # || <random> || Work in progress ||
 || # || <ratio>     || In x64 branch only; tested. ||
-|| # || <regex> ||
+|| # || <regex> || ||
 || # || <set>       || In x64 branch only; untested. ||
 || # || <sstream>   || Incomplete. ||
 || # || <stack>     || As in C++03 but on top of `vector`. ||
@@ -78,29 +78,29 @@ To enable the different runtime features, include the corresponding [http://code
 || # || <tuple> || In x64 branch only; tested; incomplete. ||
 || # || <typeinfo>  || Copmlete, but name demangling implemented in x64 branch only (not required by Standard). ||
 || # || <type_traits> || Almost complete (N2723) (no is_standard_layout for MSVC & ICC). ||
-|| # || <unordered_map> ||
-|| # || <unordered_set> ||
+|| # || <unordered_map> || In x64 branch only; untested. ||
+|| # || <unordered_set> || In x64 branch only; untested. ||
 || # || <utility>   || Complete. ||
-|| # || <valarray> ||
+|| # || <valarray> || ||
 || # || <vector>    || Note about stl-exception-safety branch. ||
 
 ==C++ Headers for C Library Facilities (§17.6.2.3/7)==
 || # || <cassert>   || Complete. ||
 || # || <ccomplex>  || Not planned. ||
-|| # || <cctype> ||
+|| # || <cctype> || ||
 || # || <cerrno> || Not planned. ||
-|| # || <cfenv> ||
+|| # || <cfenv> || ||
 || # || <cfloat>    || Complete. But no runtime support for floats yet. ||
-|| # || <cinttypes> ||
+|| # || <cinttypes> || ||
 || # || <ciso646>   || Dummy header. ||
 || # || <climits>   || Complete. ||
-|| # || <clocale> ||
-|| # || <cmath> ||
+|| # || <clocale> || ||
+|| # || <cmath> || ||
 || # || <csetjmp> || Not planned. ||
-|| # || <csignal> ||
+|| # || <csignal> || ||
 || # || <cstdarg>   || Complete. ||
-|| # || <cstdatomic> ||
-|| # || <cstdbool> ||
+|| # || <cstdatomic> || ||
+|| # || <cstdbool> || ||
 || # || <cstddef>   || No `NULL` macro, use `nullptr`. ||
 || # || <cstdio> || Incomplete. ||
 || # || <cstdint> || Complete. ||
