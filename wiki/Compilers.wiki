@@ -2,11 +2,7 @@
 #labels Phase-Requirements,Phase-Implementation,Phase-Support,Featured
 <wiki:toc max_depth="10" />
 
-= Introduction =
-
-TODO: intro.
-
-== Supported compilers ==
+= Supported compilers =
  * MSVC 2005 SP1 (v14.00.50727) or newer 
  * MSVC 2010 CTP (v16)
  * Intel C++ 10.0 (or older?) or newer
@@ -15,11 +11,11 @@ TODO: intro.
  * GCC 4.2 or newer
 
 
-= Details =
+== Details ==
 
 === MSVC 2005 ===
 
-Fully supported, but specific C++0x features are unavailable.
+Fully supported, no C++0x specific features available (but some of them are emulated, such as `static_assert`, `nullptr`, alignment).
 
 === MSVC 2010 ===
 
