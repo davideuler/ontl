@@ -42,9 +42,9 @@ To enable the different runtime features, include the corresponding [http://code
 || # || <complex>   || Not planned in the near future. ||
 || # || <deque> || ||
 || # || <exception> || Incomplete (lack of C++0x features). ||
-|| # || <forward_list> || In x64 branch only; tested; incomplete (no sort) ||
+|| # || <forward_list> || In x64 branch only; tested; incomplete (no `sort()`) ||
 || # || <fstream>   || ||
-|| # || <functional> || In x64 branch only. ||
+|| # || <functional> || In x64 branch only: almost complete, but arguments count are limited (in development) ||
 || # || <future>    || Work in progress ||
 || # || <initializer_list> || No compilers to support it (except GCC 4.4). ||
 || # || <iomanip>   || Complete ||
@@ -57,7 +57,7 @@ To enable the different runtime features, include the corresponding [http://code
 || # || <list>      || No `splice`, `merge`. Redesign is planned to trade O(n) `size()`. ||
 || # || <locale>    || Incomplete. ||
 || # || <map>       || As RB tree now; untested ||
-|| # || <memory>    || Incomplete (no scoped_allocator). ||
+|| # || <memory>    || Incomplete (no `scoped_allocator`). ||
 || # || <mutex> || In x64 branch only. ||
 || # || <new>       || Complete ||
 || # || <numeric>   || Only `std::accumulate`. ||
@@ -71,13 +71,13 @@ To enable the different runtime features, include the corresponding [http://code
 || # || <stack>     || As in C++03 but on top of `vector`. ||
 || # || <stdexcept> || Complete. ||
 || # || <streambuf> || Complete. ||
-|| # || <string>    || Missed few members (replace()) ||
+|| # || <string>    || Missed few members (`replace()`) ||
 || # || <strstream> || Complete. ||
 || # || <system_error> || In x64 branch, native ||
-|| # || <threads> || Work in progress ||
-|| # || <tuple> || In x64 branch only; tested. ||
+|| # || <threads> || Complete (see `functional`) ||
+|| # || <tuple> || In x64 branch only; tested; limited parameters count. ||
 || # || <typeinfo>  || Copmlete, but name demangling implemented in x64 branch only (not required by Standard). ||
-|| # || <type_traits> || Almost complete (N2723) (no is_standard_layout for MSVC & ICC). ||
+|| # || <type_traits> || Almost complete (N2723) (no `is_standard_layout` for MSVC & ICC). ||
 || # || <unordered_map> || In x64 branch only; untested. ||
 || # || <unordered_set> || In x64 branch only; untested. ||
 || # || <utility>   || Complete. ||
