@@ -4,7 +4,7 @@
 
 = Supported compilers =
  * MSVC 2005 SP1 (v14.00.50727) or newer 
- * MSVC 2010 CTP (v16)
+ * MSVC 2010 CTP and Beta 1 (v16)
  * Intel C++ 10.0 (or older?) or newer
  * Intel C++ 11.0
  * Codegear C++ 2009 (v6.16) 
@@ -19,7 +19,7 @@ Fully supported, no C++0x specific features available (but some of them are emul
 
 === MSVC 2010 ===
 
-It is a [http://go.microsoft.com/fwlink/?LinkId=129231 CTP build], which have [http://blogs.msdn.com/vcblog/archive/2008/10/28/lambdas-auto-and-static-assert-c-0x-features-in-vc10-part-1.aspx four C++0x compiler features] (`static_assert`, `auto`, lambdas, rvalues), and it will have the `decltype` keyword in the next beta version.
+It is a [http://www.microsoft.com/visualstudio/en-us/products/2010/default.mspx Beta 1 build], which have [http://blogs.msdn.com/vcblog/archive/2008/10/28/lambdas-auto-and-static-assert-c-0x-features-in-vc10-part-1.aspx five C++0x compiler features] (`static_assert`, `auto`, lambdas, rvalues and `decltype`).
 
 Supported.
 
