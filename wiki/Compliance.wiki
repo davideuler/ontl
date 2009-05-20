@@ -15,9 +15,8 @@ headers:
 ||18.7 Exception handling ||`<exception>`||
 ||18.9 Other runtime support ||`<cstdarg>`||
 
-3 The supplied version of the header <cstdlib> shall declare at least the functions `abort()`, `atexit()`, and `exit()`
+3 The supplied version of the header <cstdlib> shall declare at least the functions `abort()`, `atexit()`, and `exit()`.
 ----
-TODO: syncronize descriptions with current code base.
 
 ==C++ Features requiring runtime support==
  # `try`/`catch` works even in kernel mode with a few limitations ([http://code.google.com/p/ontl/source/browse/branches/x64/ntl/rtl/ehsup.asm ehsup.asm], [http://code.google.com/p/ontl/source/browse/branches/x64/ntl/rtl/safeseh.asm safeseh.asm], [http://code.google.com/p/ontl/source/browse/branches/x64/ntl/rtl/eh.cpp eh.cpp]).
@@ -28,28 +27,30 @@ TODO: syncronize descriptions with current code base.
  # `thread_local` not supported yet.
  # floats - FPU flags not compatible to Standard.
 
-To enable the different runtime features, include the corresponding [http://code.google.com/p/ontl/source/browse/branches/x64/ntl/rtl/ ntl/rtl] files in the build list or project file.
+To enable the different runtime features, include the corresponding [http://code.google.com/p/ontl/source/browse/branches/x64/ntl/rtl/ ntl/rtl/*] files in the build list or project file.
 
 
 
 ==C++ Library Headers (§17.6.2.3/6) ==
+Note that *[http://ontl.googlecode.com/svn/trunk/ntl trunk/ntl]* codebase is *not supported* and it will be *replaced with the [http://ontl.googlecode.com/svn/branches/x64/ntl branches/x64] branch*.
+
 || # || <algorithm> || About 45%. ||
 || # || <array>     || Complete. ||
-|| # || <bitset>    || In x64 branch only; tested ||
-|| # || <chrono>    || In x64 branch only; tested ||
+|| # || <bitset>    || Complete. ||
+|| # || <chrono>    || Complete. ||
 || # || <codecvt> || Work in progress ||
 || # || <condition_variable> ||Work in progress ||
 || # || <complex>   || Not planned in the near future. ||
 || # || <deque> || ||
 || # || <exception> || Incomplete (lack of C++0x features). ||
-|| # || <forward_list> || In x64 branch only; tested; incomplete (no `sort()`) ||
+|| # || <forward_list> || tested; incomplete (no `sort()`) ||
 || # || <fstream>   || ||
-|| # || <functional> || In x64 branch only: almost complete, but arguments count are limited (in development) ||
-|| # || <future>    || Work in progress ||
+|| # || <functional> || almost complete, but arguments count are limited (in development) ||
+|| # || <future>    || Without C++0x exceptions ||
 || # || <initializer_list> || No compilers to support it (except GCC 4.4). ||
-|| # || <iomanip>   || Complete ||
+|| # || <iomanip>   || Complete. ||
 || # || <ios>       || No `ios_base` callbacks, `locale`. ||
-|| # || <iosfwd>    || Complete ||
+|| # || <iosfwd>    || Complete. ||
 || # || <iostream> || Work in progress ||
 || # || <istream>   || Incomplete. ||
 || # || <iterator>  || Complete. ||
@@ -58,28 +59,28 @@ To enable the different runtime features, include the corresponding [http://code
 || # || <locale>    || Incomplete. ||
 || # || <map>       || As RB tree now; untested ||
 || # || <memory>    || Incomplete (no `scoped_allocator`). ||
-|| # || <mutex> || In x64 branch only. ||
-|| # || <new>       || Complete ||
+|| # || <mutex> || Complete (see `functional` for `call_once`) ||
+|| # || <new>       || Complete. ||
 || # || <numeric>   || Only `std::accumulate`. ||
 || # || <ostream>   || Almost complete (no signed chars) ||
-|| # || <queue>     || In x64 branch only. ||
+|| # || <queue>     || Complete. ||
 || # || <random> || Work in progress ||
-|| # || <ratio>     || In x64 branch only; tested. ||
+|| # || <ratio>     || Complete. ||
 || # || <regex> || ||
-|| # || <set>       || In x64 branch only; untested. ||
+|| # || <set>       || Complete. ||
 || # || <sstream>   || Incomplete. ||
 || # || <stack>     || As in C++03 but on top of `vector`. ||
 || # || <stdexcept> || Complete. ||
 || # || <streambuf> || Complete. ||
 || # || <string>    || Missed few members (`replace()`) ||
 || # || <strstream> || Complete. ||
-|| # || <system_error> || In x64 branch, native ||
+|| # || <system_error> || Complete. ||
 || # || <threads> || Complete (see `functional`) ||
-|| # || <tuple> || In x64 branch only; tested; limited parameters count. ||
-|| # || <typeinfo>  || Copmlete, but name demangling implemented in x64 branch only (not required by Standard). ||
+|| # || <tuple> || Complete; limited parameters count. ||
+|| # || <typeinfo>  || Complete. ||
 || # || <type_traits> || Almost complete (N2723) (no `is_standard_layout` for MSVC & ICC). ||
-|| # || <unordered_map> || In x64 branch only; untested. ||
-|| # || <unordered_set> || In x64 branch only; untested. ||
+|| # || <unordered_map> || Complete, untested. ||
+|| # || <unordered_set> || Complete, untested. ||
 || # || <utility>   || Complete. ||
 || # || <valarray> || ||
 || # || <vector>    || Note about stl-exception-safety branch. ||
@@ -99,7 +100,7 @@ To enable the different runtime features, include the corresponding [http://code
 || # || <csetjmp> || Not planned. ||
 || # || <csignal> || ||
 || # || <cstdarg>   || Complete. ||
-|| # || <cstdatomic> || ||
+|| # || <cstdatomic> || Almost complete (no 64bit types support in x86) ||
 || # || <cstdbool> || ||
 || # || <cstddef>   || No `NULL` macro, use `nullptr`. ||
 || # || <cstdio> || Incomplete. ||
@@ -107,7 +108,7 @@ To enable the different runtime features, include the corresponding [http://code
 || # || <cstdlib>   || `FILE` supports only binary mode. `atexit` in x64 branch only. No buffer-overflowing stuff included. ||
 || # || <cstring>   || No `strdup`. ||
 || # || <ctgmath>   || None as ccomplex. ||
-|| # || <ctime> ||Incomplete. ||
+|| # || <ctime> || Incomplete. ||
 || # || <cuchar> || Incomplete. ||
 || # || <cwchar>    || Incomplete. ||
 || # || <cwctype> || Compliance ||
