@@ -32,7 +32,7 @@ To enable the different runtime features, include the corresponding [http://code
 
 
 ==C++ Library Headers (§17.6.2.3/6) ==
-Note that *[http://code.google.com/p/ontl/source/browse/trunk/ntl/ trunk/ntl]* codebase is *not supported* and it will be *replaced with the [http://code.google.com/p/ontl/source/browse/branches/x64/ branches/x64] branch*.
+Note that *[http://code.google.com/p/ontl/source/browse/trunk/ntl/ trunk/ntl]* codebase is *not supported* and deprecated, it will be *replaced with the [http://code.google.com/p/ontl/source/browse/branches/x64/ branches/x64] branch*.
 
 || # || <algorithm> || About 45%. ||
 || # || <array>     || Complete. ||
