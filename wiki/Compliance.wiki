@@ -41,7 +41,7 @@ Note that *[http://code.google.com/p/ontl/source/browse/trunk/ntl/ trunk/ntl]* c
 || # || <codecvt> || Work in progress ||
 || # || <condition_variable> ||Work in progress ||
 || # || <complex>   || Not planned in the near future. ||
-|| # || <deque> || ||
+|| # || <deque> || Complete. ||
 || # || <exception> || Incomplete (lack of C++0x features). ||
 || # || <forward_list> || tested; incomplete (no `sort()`) ||
 || # || <fstream>   || ||
@@ -63,13 +63,13 @@ Note that *[http://code.google.com/p/ontl/source/browse/trunk/ntl/ trunk/ntl]* c
 || # || <new>       || Complete. ||
 || # || <numeric>   || Only `std::accumulate`. ||
 || # || <ostream>   || Almost complete (no signed chars) ||
-|| # || <queue>     || Complete. ||
+|| # || <queue>     || No `priority_queue`. ||
 || # || <random> || Work in progress ||
 || # || <ratio>     || Complete. ||
 || # || <regex> || ||
 || # || <set>       || Complete. ||
 || # || <sstream>   || Incomplete. ||
-|| # || <stack>     || As in C++03 but on top of `vector`. ||
+|| # || <stack>     || Complete, but on top of `vector`. ||
 || # || <stdexcept> || Complete. ||
 || # || <streambuf> || Complete. ||
 || # || <string>    || Missed few members (`replace()`) ||
@@ -82,7 +82,7 @@ Note that *[http://code.google.com/p/ontl/source/browse/trunk/ntl/ trunk/ntl]* c
 || # || <unordered_map> || Complete, untested. ||
 || # || <unordered_set> || Complete, untested. ||
 || # || <utility>   || Complete. ||
-|| # || <valarray> || ||
+|| # || <valarray> || Not planned in near future. ||
 || # || <vector>    || Note about stl-exception-safety branch. ||
 
 ==C++ Headers for C Library Facilities (§17.6.2.3/7)==
@@ -101,8 +101,8 @@ Note that *[http://code.google.com/p/ontl/source/browse/trunk/ntl/ trunk/ntl]* c
 || # || <csignal> || ||
 || # || <cstdarg>   || Complete. ||
 || # || <cstdatomic> || Almost complete (no 64bit types support in x86) ||
-|| # || <cstdbool> || ||
-|| # || <cstddef>   || No `NULL` macro, use `nullptr`. ||
+|| # || <cstdbool> || Dummy header. ||
+|| # || <cstddef>   || No `NULL` macro, use `nullptr` instead. ||
 || # || <cstdio> || Incomplete. ||
 || # || <cstdint> || Complete. ||
 || # || <cstdlib>   || `FILE` supports only binary mode. `atexit` in x64 branch only. No buffer-overflowing stuff included. ||
@@ -135,4 +135,4 @@ The TR2 was not published yet, but you can find C++0x Library extensions in the 
 NTL contains a following separate components, which are based on TR2:
 || # || [http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2006/n1975.html Filesystem Library Proposal] || [http://code.google.com/p/ontl/source/browse/branches/x64/ntl/stlx/ext/tr2/filesystem.hxx <tr2/filesystem.hxx>] ||
 || # || [http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2006/n2101.html Hierarchical Data Structures] || planned ||
-|| # || [http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2006/n2054.pdf Networking Library Proposal] || planned for KM ||
+|| # || [http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2006/n2054.pdf Networking Library Proposal] || planned for KM, work in progress ||
