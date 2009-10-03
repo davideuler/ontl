@@ -27,7 +27,7 @@ headers:
  # `thread_local` not supported yet.
  # floats - FPU flags not compatible to Standard.
 
-To enable the different runtime features, include the corresponding [http://code.google.com/p/ontl/source/browse/branches/x64/ntl/rtl/ ntl/rtl/*] files in the build list or project file.
+To enable various runtime features, include corresponding [http://code.google.com/p/ontl/source/browse/branches/x64/ntl/rtl/ ntl/rtl/*] files in the build list or project file.
 
 
 
@@ -122,7 +122,7 @@ Note that *[http://code.google.com/p/ontl/source/browse/trunk/ntl/ trunk/ntl]* c
 
 The technical report describes extensions to the C++ standard library that is described in the International Standard for the C++ programming language. Almost all library components from it are moved to the C++0x Standard.
 
-NTL contains a following separate components, which are based on TR1:
+NTL contains following separate components, which are based on TR1:
 || # || 2.2 Smart pointers || [http://code.google.com/p/ontl/source/browse/branches/x64/ntl/stlx/ext/tr1/smart_ptr_tr1.hxx <tr1/smart_ptr.hxx>] ||
 
 
@@ -132,7 +132,7 @@ NTL contains a following separate components, which are based on TR1:
 
 The TR2 was not published yet, but you can find C++0x Library extensions in the wishlist.
 
-NTL contains a following separate components, which are based on TR2:
+NTL contains following separate components, which are based on TR2:
 || # || [http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2006/n1975.html Filesystem Library Proposal] || [http://code.google.com/p/ontl/source/browse/branches/x64/ntl/stlx/ext/tr2/filesystem.hxx <tr2/filesystem.hxx>] ||
 || # || [http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2006/n2101.html Hierarchical Data Structures] || planned ||
 || # || [http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2006/n2054.pdf Networking Library Proposal] || planned for KM, work in progress ||
