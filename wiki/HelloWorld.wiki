@@ -1,4 +1,5 @@
 #summary HelloWorld console application
+#labels Featured
 
 Here is traditional HelloWorld program written for 0NTL
 
