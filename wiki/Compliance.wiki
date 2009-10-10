@@ -78,6 +78,7 @@ Note that *[http://code.google.com/p/ontl/source/browse/trunk/ntl/ trunk/ntl]* c
 || # || <threads> || Complete (see `functional`) ||
 || # || <tuple> || Complete; limited parameters count. ||
 || # || <typeinfo>  || Complete. ||
+|| # || <typeindex>  || Complete. ||
 || # || <type_traits> || Almost complete (N2723) (no `is_standard_layout` for MSVC & ICC). ||
 || # || <unordered_map> || Complete, untested. ||
 || # || <unordered_set> || Complete, untested. ||
