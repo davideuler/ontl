@@ -22,7 +22,7 @@ headers:
  # `try`/`catch` works even in kernel mode with a few limitations ([http://code.google.com/p/ontl/source/browse/branches/x64/ntl/rtl/ehsup.asm ehsup.asm], [http://code.google.com/p/ontl/source/browse/branches/x64/ntl/rtl/safeseh.asm safeseh.asm], [http://code.google.com/p/ontl/source/browse/branches/x64/ntl/rtl/eh.cpp eh.cpp]).
  # Runtime type info and `dynamic_cast<>` ([http://code.google.com/p/ontl/source/browse/branches/x64/ntl/rtl/rtti.cpp rtti.cpp]).
  # Static object ctors/dtors support ([http://code.google.com/p/ontl/source/browse/branches/x64/ntl/rtl/crt.cpp crt.cpp]).
- # I/O Streams support ([http://code.google.com/p/ontl/source/browse/branches/x64/ntl/rtl/iostream.cpp iostream.cpp]; [http://code.google.com/p/ontl/source/browse/branches/x64/ntl/rtl/wchar_mask_data.cpp wchar_mask_data.cpp] for `wchar_t` specializations).
+ # I/O Streams support (crt.cpp, [http://code.google.com/p/ontl/source/browse/branches/x64/ntl/rtl/iostream.cpp iostream.cpp]; [http://code.google.com/p/ontl/source/browse/branches/x64/ntl/rtl/wchar_mask_data.cpp wchar_mask_data.cpp] for `wchar_t` specializations).
  # System error support ([http://code.google.com/p/ontl/source/browse/branches/x64/ntl/rtl/syserr.cpp syserr.cpp]).
  # `thread_local` not supported yet.
  # floats - FPU flags not compatible to Standard.
@@ -49,26 +49,26 @@ Note that *[http://code.google.com/p/ontl/source/browse/trunk/ntl/ trunk/ntl]* c
 || # || <future>    || Without C++0x exceptions ||
 || # || <initializer_list> || No compilers to support it (except GCC 4.4). ||
 || # || <iomanip>   || Complete. ||
-|| # || <ios>       || No `ios_base` callbacks, `locale`. ||
+|| # || <ios>       || No `ios_base` callbacks. ||
 || # || <iosfwd>    || Complete. ||
-|| # || <iostream> || Work in progress ||
-|| # || <istream>   || Incomplete. ||
+|| # || <iostream> || Complete for console io. ||
+|| # || <istream>   || Almost complete (no signed chars & FP). ||
 || # || <iterator>  || Complete. ||
 || # || <limits>    || Complete except of `numeric_limits<long double>::infinity()` & Co for ICC (10 bytes in size). ||
 || # || <list>      || No `splice`, `merge`. Redesign is planned to trade O(n) `size()`. ||
-|| # || <locale>    || Incomplete. ||
+|| # || <locale>    || Only "C" locale: ctype, num_get/num_put (w/o floating point), num_punct.  ||
 || # || <map>       || As RB tree now; untested ||
 || # || <memory>    || Incomplete (no `scoped_allocator`). ||
 || # || <mutex> || Complete (see `functional` for `call_once`) ||
 || # || <new>       || Complete. ||
 || # || <numeric>   || Only `std::accumulate`. ||
-|| # || <ostream>   || Almost complete (no signed chars) ||
+|| # || <ostream>   || Almost complete (no signed chars & FP). ||
 || # || <queue>     || No `priority_queue`. ||
 || # || <random> || Work in progress ||
 || # || <ratio>     || Complete. ||
 || # || <regex> || ||
 || # || <set>       || Complete. ||
-|| # || <sstream>   || Incomplete. ||
+|| # || <sstream>   || Complete. ||
 || # || <stack>     || Complete, but on top of `vector`. ||
 || # || <stdexcept> || Complete. ||
 || # || <streambuf> || Complete. ||
@@ -76,7 +76,7 @@ Note that *[http://code.google.com/p/ontl/source/browse/trunk/ntl/ trunk/ntl]* c
 || # || <strstream> || Complete. ||
 || # || <system_error> || Complete. ||
 || # || <threads> || Complete (see `functional`) ||
-|| # || <tuple> || Complete; limited parameters count. ||
+|| # || <tuple> || Complete; limited type count. ||
 || # || <typeinfo>  || Complete. ||
 || # || <typeindex>  || Complete. ||
 || # || <type_traits> || Almost complete (N2723) (no `is_standard_layout` for MSVC & ICC). ||
@@ -131,7 +131,7 @@ NTL contains following separate components, which are based on TR1:
 
 [http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2006/n2034.htm C++0x Standard Library wishlist]
 
-The TR2 was not published yet, but you can find C++0x Library extensions in the wishlist.
+The TR2 was cancelled in '08 and not published, but you can find C++0x Library extensions in the wishlist.
 
 NTL contains following separate components, which are based on TR2:
 || # || [http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2006/n1975.html Filesystem Library Proposal] || [http://code.google.com/p/ontl/source/browse/branches/x64/ntl/stlx/ext/tr2/filesystem.hxx <tr2/filesystem.hxx>] ||
