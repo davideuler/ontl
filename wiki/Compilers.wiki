@@ -19,7 +19,7 @@ Fully supported, no C++0x specific features available (but some of them are emul
 
 === MSVC 2010 ===
 
-It is a [http://www.microsoft.com/visualstudio/en-us/products/2010/default.mspx Beta 2 build], which have [http://blogs.msdn.com/vcblog/archive/2008/10/28/lambdas-auto-and-static-assert-c-0x-features-in-vc10-part-1.aspx siz C++0x compiler features] (`static_assert`, `auto`, `nullptr`, lambdas, rvalues and `decltype`).
+It is a [http://www.microsoft.com/visualstudio/en-us/products/2010/default.mspx Beta 2 build], which have [http://blogs.msdn.com/vcblog/archive/2008/10/28/lambdas-auto-and-static-assert-c-0x-features-in-vc10-part-1.aspx six C++0x compiler features] (`static_assert`, `auto`, `nullptr`, lambdas, rvalues and `decltype`).
 
 Supported.
 
