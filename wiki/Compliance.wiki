@@ -117,7 +117,7 @@ Note that *[http://code.google.com/p/ontl/source/browse/trunk/ntl/ trunk/ntl]* c
 
 = Technical Report on C++ Library extensions =
 
-== Technicsl Report 1 ==
+== Technical Report 1 ==
 
 [http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2005/n1836.pdf Draft]
 
@@ -131,7 +131,7 @@ NTL contains following separate components, which are based on TR1:
 
 [http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2006/n2034.htm C++0x Standard Library wishlist]
 
-The TR2 was cancelled in '08 and not published, but you can find C++0x Library extensions in the wishlist.
+The TR2 was canceled in '08 and not published, but you can find C++0x Library extensions in the wishlist.
 
 NTL contains following separate components, which are based on TR2:
 || # || [http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2006/n1975.html Filesystem Library Proposal] || [http://code.google.com/p/ontl/source/browse/branches/x64/ntl/stlx/ext/tr2/filesystem.hxx <tr2/filesystem.hxx>] ||
