@@ -39,30 +39,30 @@ Note that *[http://code.google.com/p/ontl/source/browse/trunk/ntl/ trunk/ntl]* c
 || # || <bitset>    || Complete. ||
 || # || <chrono>    || Complete. ||
 || # || <codecvt> || Work in progress ||
-|| # || <condition_variable> ||Work in progress ||
+|| # || <condition_variable> || Work in progress ||
 || # || <complex>   || Not planned in the near future. ||
 || # || <deque> || Complete. ||
 || # || <exception> || Incomplete (lack of C++0x features). ||
 || # || <forward_list> || tested; incomplete (no `sort()`) ||
-|| # || <fstream>   || ||
+|| # || <fstream>   || Almost complete (no seekpos) ||
 || # || <functional> || almost complete, but arguments count are limited (in development) ||
 || # || <future>    || Without C++0x exceptions ||
-|| # || <initializer_list> || No compilers to support it (except GCC 4.4). ||
+|| # || <initializer_list> || No compilers to support it (except GCC 4.4+). ||
 || # || <iomanip>   || Complete. ||
 || # || <ios>       || No `ios_base` callbacks. ||
 || # || <iosfwd>    || Complete. ||
 || # || <iostream> || Complete for console io. ||
-|| # || <istream>   || Almost complete (no signed chars & FP). ||
+|| # || <istream>   || Almost complete (no FP). ||
 || # || <iterator>  || Complete. ||
 || # || <limits>    || Complete except of `numeric_limits<long double>::infinity()` & Co for ICC (10 bytes in size). ||
 || # || <list>      || No `splice`, `merge`. Redesign is planned to trade O(n) `size()`. ||
-|| # || <locale>    || Only "C" locale: ctype, num_get/num_put (w/o floating point), num_punct.  ||
+|| # || <locale>    || Only "C" locale (no time, collate, messages and w/o locale mixins) ||
 || # || <map>       || As RB tree now; untested ||
 || # || <memory>    || Incomplete (no `scoped_allocator`). ||
 || # || <mutex> || Complete (see `functional` for `call_once`) ||
 || # || <new>       || Complete. ||
 || # || <numeric>   || Only `std::accumulate`. ||
-|| # || <ostream>   || Almost complete (no signed chars & FP). ||
+|| # || <ostream>   || Almost complete (no FP). ||
 || # || <queue>     || No `priority_queue`. ||
 || # || <random> || Work in progress ||
 || # || <ratio>     || Complete. ||
@@ -93,13 +93,13 @@ Note that *[http://code.google.com/p/ontl/source/browse/trunk/ntl/ trunk/ntl]* c
 || # || <cerrno> || Not planned. ||
 || # || <cfenv> || ||
 || # || <cfloat>    || Complete. But no runtime support for floats yet. ||
-|| # || <cinttypes> || ||
+|| # || <cinttypes> || Complete. ||
 || # || <ciso646>   || Dummy header. ||
 || # || <climits>   || Complete. ||
-|| # || <clocale> || ||
-|| # || <cmath> || ||
+|| # || <clocale> || Not planned. ||
+|| # || <cmath> || Not planned. ||
 || # || <csetjmp> || Not planned. ||
-|| # || <csignal> || ||
+|| # || <csignal> || Not planned. ||
 || # || <cstdarg>   || Complete. ||
 || # || <cstdatomic> || Almost complete (no 64bit types support in x86) ||
 || # || <cstdbool> || Dummy header. ||
@@ -131,7 +131,7 @@ NTL contains following separate components, which are based on TR1:
 
 [http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2006/n2034.htm C++0x Standard Library wishlist]
 
-The TR2 was canceled in '08 and not published, but you can find C++0x Library extensions in the wishlist.
+The TR2 was cancelled in '08 and not published, but you can find C++0x Library extensions in the wishlist.
 
 NTL contains following separate components, which are based on TR2:
 || # || [http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2006/n1975.html Filesystem Library Proposal] || [http://code.google.com/p/ontl/source/browse/branches/x64/ntl/stlx/ext/tr2/filesystem.hxx <tr2/filesystem.hxx>] ||
