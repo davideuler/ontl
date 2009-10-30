@@ -39,7 +39,7 @@ Note that *[http://code.google.com/p/ontl/source/browse/trunk/ntl/ trunk/ntl]* c
 || # || <bitset>    || Complete. ||
 || # || <chrono>    || Complete. ||
 || # || <codecvt> || Work in progress ||
-|| # || <condition_variable> || Work in progress ||
+|| # || <condition_variable> || ||
 || # || <complex>   || Not planned in the near future. ||
 || # || <deque> || Complete. ||
 || # || <exception> || Incomplete (lack of C++0x features). ||
@@ -64,7 +64,7 @@ Note that *[http://code.google.com/p/ontl/source/browse/trunk/ntl/ trunk/ntl]* c
 || # || <numeric>   || Only `std::accumulate`. ||
 || # || <ostream>   || Almost complete (no FP). ||
 || # || <queue>     || No `priority_queue`. ||
-|| # || <random> || Work in progress ||
+|| # || <random> || ||
 || # || <ratio>     || Complete. ||
 || # || <regex> || ||
 || # || <set>       || Complete. ||
