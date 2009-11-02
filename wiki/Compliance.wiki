@@ -89,30 +89,30 @@ Note that *[http://code.google.com/p/ontl/source/browse/trunk/ntl/ trunk/ntl]* c
 ==C++ Headers for C Library Facilities (§17.6.2.3/7)==
 || # || <cassert>   || Complete. ||
 || # || <ccomplex>  || Not planned. ||
-|| # || <cctype> || ||
-|| # || <cerrno> || Not planned. ||
-|| # || <cfenv> || ||
+|| # || <cctype>    || ||
+|| # || <cerrno>    || Not planned. ||
+|| # || <cfenv>     || ||
 || # || <cfloat>    || Complete. But no runtime support for floats yet. ||
 || # || <cinttypes> || Complete. ||
 || # || <ciso646>   || Dummy header. ||
 || # || <climits>   || Complete. ||
-|| # || <clocale> || Not planned. ||
-|| # || <cmath> || Not planned. ||
-|| # || <csetjmp> || Not planned. ||
-|| # || <csignal> || Not planned. ||
+|| # || <clocale>   || Not planned. ||
+|| # || <cmath>     || Not planned. ||
+|| # || <csetjmp>   || Not planned. ||
+|| # || <csignal>   || Not planned. ||
 || # || <cstdarg>   || Complete. ||
-|| # || <cstdatomic> || Almost complete (no 64bit types support in x86) ||
-|| # || <cstdbool> || Dummy header. ||
+|| # || <cstdatomic>|| Almost complete (no 64bit types support in x86) ||
+|| # || <cstdbool>  || Dummy header. ||
 || # || <cstddef>   || No `NULL` macro, use `nullptr` instead. ||
-|| # || <cstdio> || Incomplete. ||
-|| # || <cstdint> || Complete. ||
+|| # || <cstdio>    || Incomplete. ||
+|| # || <cstdint>   || Complete. ||
 || # || <cstdlib>   || `FILE` supports only binary mode. `atexit` in x64 branch only. No buffer-overflowing stuff included. ||
 || # || <cstring>   || No `strdup`. ||
 || # || <ctgmath>   || None as ccomplex. ||
-|| # || <ctime> || Incomplete. ||
-|| # || <cuchar> || Incomplete. ||
+|| # || <ctime>     || Incomplete. ||
+|| # || <cuchar>    || Incomplete. ||
 || # || <cwchar>    || Incomplete. ||
-|| # || <cwctype> || Compliance ||
+|| # || <cwctype>   || Compliance ||
 
 
 = Technical Report on C++ Library extensions =
