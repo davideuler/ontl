@@ -42,7 +42,7 @@ Note that *[http://code.google.com/p/ontl/source/browse/trunk/ntl/ trunk/ntl]* c
 || # || <condition_variable>    || ||
 || # || <complex>               || Not planned in the near future. ||
 || # || <deque>                 || Complete. ||
-|| # || <exception>             || Incomplete (lack of C++0x features). ||
+|| # || <exception>             || Complete. ||
 || # || <forward_list>          || tested; incomplete (no `sort()`) ||
 || # || <fstream>               || Almost complete (no seekpos) ||
 || # || <functional>            || almost complete, but arguments count are limited (in development) ||
