@@ -73,7 +73,7 @@ Note that *[http://code.google.com/p/ontl/source/browse/trunk/ntl/ trunk/ntl]* c
 || # || <stack>                 || Complete, but on top of `vector`. ||
 || # || <stdexcept>             || Complete. ||
 || # || <streambuf>             || Complete. ||
-|| # || <string>                || Missed few members (`replace()`) ||
+|| # || <string>                || Complete. ||
 || # || <strstream>             || Complete. ||
 || # || <system_error>          || Complete. ||
 || # || <threads>               || Complete (see `functional`) ||
