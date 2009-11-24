@@ -34,8 +34,9 @@ To enable various runtime features, include corresponding [http://code.google.co
 ==C++ Library Headers (§17.6.2.3/6) ==
 Note that *[http://code.google.com/p/ontl/source/browse/trunk/ntl/ trunk/ntl]* codebase is *not supported* and deprecated, it will be *replaced with the [http://code.google.com/p/ontl/source/browse/branches/x64/ branches/x64] branch*.
 
-|| # || <algorithm>             || About 45%. ||
+|| # || <algorithm>             || About 45%.||
 || # || <array>                 || Complete. ||
+|| # || <atomic>                || No 64bit types support in x86, not conforming the N3000 ||
 || # || <bitset>                || Complete. ||
 || # || <chrono>                || Complete. ||
 || # || <codecvt>               || Work in progress ||
@@ -46,7 +47,7 @@ Note that *[http://code.google.com/p/ontl/source/browse/trunk/ntl/ trunk/ntl]* c
 || # || <forward_list>          || tested; incomplete (no `sort()`) ||
 || # || <fstream>               || Almost complete (no seekpos) ||
 || # || <functional>            || almost complete, but arguments count are limited (in development) ||
-|| # || <future>                || Without C++0x exceptions ||
+|| # || <future>                || Not confirming the N3000 ||
 || # || <initializer_list>      || No compilers to support it (except GCC 4.4+). ||
 || # || <iomanip>               || Complete. ||
 || # || <ios>                   || No `ios_base` callbacks. ||
@@ -101,7 +102,6 @@ Note that *[http://code.google.com/p/ontl/source/browse/trunk/ntl/ trunk/ntl]* c
 || # || <csetjmp>   || Not planned. ||
 || # || <csignal>   || Not planned. ||
 || # || <cstdarg>   || Complete. ||
-|| # || <cstdatomic>|| Almost complete (no 64bit types support in x86) ||
 || # || <cstdbool>  || Dummy header. ||
 || # || <cstddef>   || No `NULL` macro, use `nullptr` instead. ||
 || # || <cstdio>    || Incomplete. ||
