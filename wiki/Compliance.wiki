@@ -19,7 +19,7 @@ headers:
 ----
 
 ==C++ Features requiring runtime support==
- # `try`/`catch` works even in kernel mode with a few limitations ([http://code.google.com/p/ontl/source/browse/branches/x64/ntl/rtl/ehsup.asm ehsup.asm], [http://code.google.com/p/ontl/source/browse/branches/x64/ntl/rtl/safeseh.asm safeseh.asm], [http://code.google.com/p/ontl/source/browse/branches/x64/ntl/rtl/eh.cpp eh.cpp]).
+ # `try`/`catch` works even in kernel mode with a few limitations ([http://code.google.com/p/ontl/source/browse/branches/x64/ntl/rtl/ehsup.asm ehsup.asm], [http://code.google.com/p/ontl/source/browse/branches/x64/ntl/rtl/eh.cpp eh.cpp]).
  # Runtime type info and `dynamic_cast<>` ([http://code.google.com/p/ontl/source/browse/branches/x64/ntl/rtl/rtti.cpp rtti.cpp]).
  # Static object ctors/dtors support ([http://code.google.com/p/ontl/source/browse/branches/x64/ntl/rtl/crt.cpp crt.cpp]).
  # I/O Streams support (crt.cpp, [http://code.google.com/p/ontl/source/browse/branches/x64/ntl/rtl/iostream.cpp iostream.cpp]; [http://code.google.com/p/ontl/source/browse/branches/x64/ntl/rtl/wchar_mask_data.cpp wchar_mask_data.cpp] for `wchar_t` specializations).
