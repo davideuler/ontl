@@ -23,7 +23,6 @@ headers:
  # Runtime type info and `dynamic_cast<>` ([http://code.google.com/p/ontl/source/browse/branches/x64/ntl/rtl/rtti.cpp rtti.cpp]).
  # Static object ctors/dtors support ([http://code.google.com/p/ontl/source/browse/branches/x64/ntl/rtl/crt.cpp crt.cpp]).
  # I/O Streams support (crt.cpp, [http://code.google.com/p/ontl/source/browse/branches/x64/ntl/rtl/iostream.cpp iostream.cpp]; [http://code.google.com/p/ontl/source/browse/branches/x64/ntl/rtl/wchar_mask_data.cpp wchar_mask_data.cpp] for `wchar_t` specializations).
- # System error support ([http://code.google.com/p/ontl/source/browse/branches/x64/ntl/rtl/syserr.cpp syserr.cpp]).
  # `thread_local` not supported yet.
  # floats - FPU flags not compatible to Standard.
 
