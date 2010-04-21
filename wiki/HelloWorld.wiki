@@ -1,5 +1,5 @@
 #summary HelloWorld console application
-#labels Featured
+#labels Featured,Phase-Documentation
 
 Here is traditional HelloWorld program written for 0NTL
 
