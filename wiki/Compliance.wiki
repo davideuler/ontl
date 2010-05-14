@@ -55,7 +55,7 @@ Note that *[http://code.google.com/p/ontl/source/browse/trunk/ntl/ trunk/ntl]* c
 || # || <istream>               || Almost complete (no FP). ||
 || # || <iterator>              || Complete. ||
 || # || <limits>                || Complete except of `numeric_limits<long double>::infinity()` & Co for ICC (10 bytes in size). ||
-|| # || <list>                  || No `splice`, `merge`. Redesign is planned to trade O(n) `size()`. ||
+|| # || <list>                  || No `merge` yet. ||
 || # || <locale>                || Only "C" locale (no time, collate, messages and w/o locale mixins) ||
 || # || <map>                   || As RB tree now; untested ||
 || # || <memory>                || Incomplete (no `scoped_allocator`). ||
