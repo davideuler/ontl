@@ -68,6 +68,11 @@ Include the following source before anything
 #define BOOST_NO_STD_MESSAGES
 #define BOOST_MULTI_INDEX_DISABLE_SERIALIZATION
 
+#define BOOST_ARRAY_HPP
+#define NTL__ARRAY_BOOST_COMPATIBLE
+#include <array>
+namespace boost { using std::array; }
+
 #define BOOST_THREAD_THREAD_HPP
 #include <thread>
 #define BOOST_THREAD_MUTEX_HPP
@@ -80,7 +85,7 @@ Include the following source before anything
 namespace boost { 
   using std::thread;
   using std::mutex;
-  typedef std::unique_lock<std::mutex> scoped_lock;
+  using std::unique_lock;
 }
 
 #define BOOST_ASIO_DETAIL_THREAD_HPP
