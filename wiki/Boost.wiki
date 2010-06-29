@@ -1,5 +1,5 @@
 #summary Boost NTL
-#labels Phase-Documentation
+#labels Phase-Documentation,Featured
 
 It is not smooth but still possible to build Boost over NTL.
 
