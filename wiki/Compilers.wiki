@@ -15,30 +15,30 @@
 
 === MSVC 2005 ===
 
-Fully supported, no C++0x specific features available (but some of them are emulated, such as `static_assert`, `nullptr`, alignment).
+Fully supported, but no C++0x specific features available (however some of them are emulated, such as `static_assert`, `nullptr`, alignment).
 
 === MSVC 2010 ===
 
-It is a [http://www.microsoft.com/visualstudio/en-us/products/2010/default.mspx Beta 2 build], which have [http://blogs.msdn.com/vcblog/archive/2008/10/28/lambdas-auto-and-static-assert-c-0x-features-in-vc10-part-1.aspx six C++0x compiler features] (`static_assert`, `auto`, `nullptr`, lambdas, rvalues and `decltype`).
+This provides [http://blogs.msdn.com/vcblog/archive/2008/10/28/lambdas-auto-and-static-assert-c-0x-features-in-vc10-part-1.aspx six C++0x features] (`static_assert`, `auto`, `nullptr`, lambdas, rvalues and `decltype`).
 
-Supported.
+Fully supported and recommended compiler.
 
 === Intel C++ 10.0 ===
 
-It's compatible with the MSVC2005 (_and 2008_?), so it fully supported except 10 bytes size `double` type (disabled by default).
+It is compatible with the MSVC2005 (_and 2008_?), so it is fully supported except of 10 bytes size `double` type (disabled by default).
 
 === Intel C++ 11.0 ===
 
-It is a newest C++ compiler from Intel which have a some C++0x [http://www.intel.com/software/products/compilers/docs/clin/main_cls/copts/ccpp_options/option_std.htm specific features] (e.g. `static_assert`, `auto`, lambdas, extern templates, `decltype`), but not rvalue references, so it supported as MSVC2005/2008.
+It is the newest C++ compiler from Intel which has some C++0x [http://www.intel.com/software/products/compilers/docs/clin/main_cls/copts/ccpp_options/option_std.htm specific features] (e.g. `static_assert`, `auto`, lambdas, extern templates, `decltype`), but no rvalue references, so it is supported as MSVC2005/2008.
 
 === Codegear C++ Builder 2009 ===
 
-New compiler of the C++ Builder which haves a [http://docs.google.com/View?docid=dgq8z6h7_5fn4t5cmp lot of C++0x features] ([http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2249.html extended unicode character types] (UTF-16 and UTF-32), `alignof`, `static_assert`, `decltype`, strongly typed enums, extern templates and rvalues).
+New compiler of the C++ Builder has a [http://docs.google.com/View?docid=dgq8z6h7_5fn4t5cmp lot of C++0x features] ([http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2249.html extended unicode character types] (UTF-16 and UTF-32), `alignof`, `static_assert`, `decltype`, strongly typed enums, extern templates and rvalues).
 
-It supported only in [http://ontl.googlecode.com/svn/branches/stlx STLx] branch with the external runtime.
+It id supported only in [http://ontl.googlecode.com/svn/branches/stlx STLx] branch with the external runtime.
 
 === GCC ===
 
-GCC's C++ Frontend have an [http://gcc.gnu.org/projects/cxx0x.html experimental C++0x support] (in 4.3+ version). Compilers prior to 4.3 isn't fully supported due to they don't have special type traits support.
+GCC's C++ Frontend has an [http://gcc.gnu.org/projects/cxx0x.html experimental C++0x support] (in 4.3+ version). Compilers prior to 4.3 are not fully supported due to absence of the special built-in type traits.
 
-It fully supported only in [http://ontl.googlecode.com/svn/branches/stlx STLx] branch with the external C runtime library.
+It is fully supported only in [http://ontl.googlecode.com/svn/branches/stlx STLx] branch with the external C runtime library.
