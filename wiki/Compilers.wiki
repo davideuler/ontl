@@ -5,8 +5,9 @@
 = Supported compilers =
  * MSVC 2005 SP1 (v14.00.50727) or newer 
  * MSVC 2010 (v16)
- * Intel C++ 10.0 (or older?) or newer
- * Intel C++ 11.0 or newer
+ * Intel C++ 10.0 (or older?)
+ * Intel C++ 11.0
+ * Intel C++ 12.0
  * Codegear C++ 2009 (v6.16) or newer
  * GCC 4.2 or newer
 
@@ -29,7 +30,11 @@ It is compatible with the MSVC2005 (_and 2008_?), so it is fully supported excep
 
 === Intel C++ 11.0 ===
 
-It is the newest C++ compiler from Intel which has some C++0x [http://www.intel.com/software/products/compilers/docs/clin/main_cls/copts/ccpp_options/option_std.htm specific features] (e.g. `static_assert`, `auto`, lambdas, extern templates, `decltype`), but no rvalue references, so it is supported as MSVC2005/2008.
+It is the first C++ compiler version from Intel which has some C++0x [http://software.intel.com/en-us/articles/c0x-features-supported-by-intel-c-compiler/ specific features] (e.g. `static_assert`, `auto`, lambdas, extern templates, `decltype`), but no rvalue references, so it is supported as MSVC2005/2008.
+
+=== Intel C++ 12.0 ===
+
+Newest C++ compiler with lot of [http://software.intel.com/en-us/articles/c0x-features-supported-by-intel-c-compiler/ C++0x features].
 
 === Codegear C++ Builder 2009 ===
 
