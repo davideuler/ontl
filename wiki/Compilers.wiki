@@ -5,9 +5,7 @@
 = Supported compilers =
  * MSVC 2005 SP1 (v14.00.50727) or newer 
  * MSVC 2010 (v16)
- * Intel C++ 10.0 (or older?)
- * Intel C++ 11.0
- * Intel C++ 12.0
+ * Intel C++ 10.0 (or older?), 11.0, 12.0
  * Codegear C++ 2009 (v6.16) or newer
  * GCC 4.2 or newer
 
