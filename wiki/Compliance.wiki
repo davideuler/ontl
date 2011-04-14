@@ -3,19 +3,23 @@
 
 <wiki:toc max_depth="10" />
 
-= 17.4.1.3 Freestanding implementations =
+= 17.6.1.3 Freestanding implementations =
 
 2 A freestanding implementation has an implementation-defined set of headers. This set shall include at least the following
 headers:
-||18.1 Types ||`<cstddef>`||
-||18.2 Implementation properties ||`<limits>`||
-||18.4 Start and termination ||`<cstdlib>`||
-||18.5 Dynamic memory management ||`<new>`||
-||18.6 Type identification ||`<typeinfo>`||
-||18.7 Exception handling ||`<exception>`||
-||18.9 Other runtime support ||`<cstdarg>`||
+||18.2 Types ||`<cstddef>`||
+||18.3 Implementation properties ||`<cfloat><limits><climits>`||
+||18.4 Integer types ||`<cstdint>`||
+||18.5 Start and termination ||`<cstdlib>`||
+||18.6 Dynamic memory management ||`<new>`||
+||18.7 Type identification ||`<typeinfo>`||
+||18.8 Exception handling ||`<exception>`||
+||18.9 Initializer lists ||`<initializer_list>`||
+||18.10 Other runtime support ||`<cstdalign> <cstdarg> <cstdbool>`||
+||20.9 Type traits ||`<type_traits>`||
+||29 Atomics ||`<atomic>`||
 
-3 The supplied version of the header <cstdlib> shall declare at least the functions `abort()`, `atexit()`, and `exit()`.
+3 The supplied version of the header <cstdlib> shall declare at least the functions `abort()`, `atexit()`, `at_quick_exit()`, `exit()` and `quick_exit()`.
 ----
 
 ==C++ Features requiring runtime support==
@@ -24,13 +28,13 @@ headers:
  # Static object ctors/dtors support ([http://code.google.com/p/ontl/source/browse/branches/x64/ntl/rtl/crt.cpp crt.cpp]).
  # I/O Streams support (crt.cpp, [http://code.google.com/p/ontl/source/browse/branches/x64/ntl/rtl/iostream.cpp iostream.cpp]; [http://code.google.com/p/ontl/source/browse/branches/x64/ntl/rtl/wchar_mask_data.cpp wchar_mask_data.cpp] for `wchar_t` specializations).
  # `thread_local` not supported yet.
- # floats - FPU flags not compatible to Standard.
+ # floats - FPU flags not compatible to Standard (`<cmath>` runtime in [http://code.google.com/p/ontl/source/browse/branches/x64/ntl/rtl/math.cpp math.cpp]).
 
 To enable various runtime features, include corresponding [http://code.google.com/p/ontl/source/browse/branches/x64/ntl/rtl/ ntl/rtl/*] files in the build list or project file.
 
 
 
-==C++ Library Headers (§17.6.2.3/6) ==
+==C++ Library Headers (§17.6.1.2/2) ==
 Note that *[http://code.google.com/p/ontl/source/browse/trunk/ntl/ trunk/ntl]* codebase is *not supported* and deprecated, it will be *replaced with the [http://code.google.com/p/ontl/source/browse/branches/x64/ branches/x64] branch*.
 
 || # || <algorithm>             || About 45%.||
@@ -39,8 +43,8 @@ Note that *[http://code.google.com/p/ontl/source/browse/trunk/ntl/ trunk/ntl]* c
 || # || <bitset>                || Complete. ||
 || # || <chrono>                || Complete. ||
 || # || <codecvt>               || Work in progress ||
-|| # || <condition_variable>    || ||
 || # || <complex>               || Not planned in the near future. ||
+|| # || <condition_variable>    || ||
 || # || <deque>                 || Complete. ||
 || # || <exception>             || Complete. ||
 || # || <forward_list>          || tested; incomplete (no `sort()`) ||
@@ -75,18 +79,18 @@ Note that *[http://code.google.com/p/ontl/source/browse/trunk/ntl/ trunk/ntl]* c
 || # || <string>                || Complete. ||
 || # || <strstream>             || Complete. ||
 || # || <system_error>          || Complete. ||
-|| # || <threads>               || Complete (see `functional`) ||
+|| # || <thread>                || Complete (see `functional`) ||
 || # || <tuple>                 || Complete; limited type count. ||
 || # || <typeinfo>              || Complete. ||
 || # || <typeindex>             || Complete. ||
-|| # || <type_traits>           || Almost complete (N2723) (no `is_standard_layout` for MSVC & ICC). ||
+|| # || <type_traits>           || Based on old traits (N2960). ||
 || # || <unordered_map>         || Complete, untested. ||
 || # || <unordered_set>         || Complete, untested. ||
 || # || <utility>               || Complete. ||
 || # || <valarray>              || Not planned in near future. ||
 || # || <vector>                || Note about stl-exception-safety branch. ||
 
-==C++ Headers for C Library Facilities (§17.6.2.3/7)==
+==C++ Headers for C Library Facilities (§17.6.1.2/3)==
 || # || <cassert>   || Complete. ||
 || # || <ccomplex>  || Not planned. ||
 || # || <cctype>    || ||
@@ -100,11 +104,12 @@ Note that *[http://code.google.com/p/ontl/source/browse/trunk/ntl/ trunk/ntl]* c
 || # || <cmath>     || Not planned. ||
 || # || <csetjmp>   || Not planned. ||
 || # || <csignal>   || Not planned. ||
+|| # || <cstdalign> || Dummy header. ||
 || # || <cstdarg>   || Complete. ||
 || # || <cstdbool>  || Dummy header. ||
 || # || <cstddef>   || No `NULL` macro, use `nullptr` instead. ||
-|| # || <cstdio>    || Incomplete. ||
 || # || <cstdint>   || Complete. ||
+|| # || <cstdio>    || Incomplete. ||
 || # || <cstdlib>   || `FILE` supports only binary mode. `atexit` in x64 branch only. No buffer-overflowing stuff included. ||
 || # || <cstring>   || No `strdup`. ||
 || # || <ctgmath>   || None as ccomplex. ||
