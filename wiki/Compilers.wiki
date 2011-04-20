@@ -18,7 +18,7 @@ Fully supported, but no C++0x specific features available (however some of them 
 
 === MSVC 2010 ===
 
-This provides [http://blogs.msdn.com/vcblog/archive/2008/10/28/lambdas-auto-and-static-assert-c-0x-features-in-vc10-part-1.aspx six C++0x features] (`static_assert`, `auto`, `nullptr`, lambdas, rvalues and `decltype`).
+Provides [http://blogs.msdn.com/b/vcblog/archive/2010/04/06/c-0x-core-language-features-in-vc10-the-table.aspx part of C++0x Core Language features].
 
 Fully supported and recommended compiler.
 
