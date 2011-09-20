@@ -36,7 +36,7 @@ Newest C++ compiler with lot of [http://software.intel.com/en-us/articles/c0x-fe
 
 === Codegear C++ Builder 2009 ===
 
-New compiler of the C++ Builder has a [http://docs.google.com/View?docid=dgq8z6h7_5fn4t5cmp lot of C++0x features] ([http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2249.html extended unicode character types] (UTF-16 and UTF-32), `alignof`, `static_assert`, `decltype`, strongly typed enums, extern templates and rvalues).
+New compiler of the C++ Builder has a [http://docwiki.embarcadero.com/RADStudio/en/C%2B%2B0x_Features_Index lot of C++0x features] ([http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2249.html extended unicode character types] (UTF-16 and UTF-32), `alignof`, `static_assert`, `decltype`, strongly typed enums, extern templates and rvalues).
 
 It id supported only in [http://ontl.googlecode.com/svn/branches/stlx STLx] branch with the external runtime.
 
