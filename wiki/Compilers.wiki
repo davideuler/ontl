@@ -4,44 +4,54 @@
 
 = Supported compilers =
  * MSVC 2005 SP1 (v14.00.50727) or newer 
- * MSVC 2010 (v16)
+ * MSVC 2010 (v16), 2011 (v17)
  * Intel C++ 10.0 (or older?), 11.0, 12.0
  * Codegear C++ 2009 (v6.16) or newer
  * GCC 4.2 or newer
+ * Clang 2.9 or newer
 
 
-== Details ==
 
-=== MSVC 2005 ===
+== MSVC 2005 ==
 
 Fully supported, but no C++0x specific features available (however some of them are emulated, such as `static_assert`, `nullptr`, alignment).
 
-=== MSVC 2010 ===
+== MSVC 2010, 2011 ==
 
 Provides [http://blogs.msdn.com/b/vcblog/archive/2010/04/06/c-0x-core-language-features-in-vc10-the-table.aspx part of C++0x Core Language features].
 
-Fully supported and recommended compiler.
+2011 have [http://blogs.msdn.com/b/vcblog/archive/2011/09/12/10209291.aspx more C++11 features].
 
-=== Intel C++ 10.0 ===
 
-It is compatible with the MSVC2005 (_and 2008_?), so it is fully supported except of 10 bytes size `double` type (disabled by default).
+Fully supported and recommended compilers.
 
-=== Intel C++ 11.0 ===
+== Intel C++ 10.0 ==
 
-It is the first C++ compiler version from Intel which has some C++0x [http://software.intel.com/en-us/articles/c0x-features-supported-by-intel-c-compiler/ specific features] (e.g. `static_assert`, `auto`, lambdas, extern templates, `decltype`), but no rvalue references, so it is supported as MSVC2005/2008.
+It is compatible with the MSVC2005 and 2008, so it is fully supported except of 10 bytes size `double` type (disabled by default).
 
-=== Intel C++ 12.0 ===
+== Intel C++ 11.0, 12.0 ==
 
-Newest C++ compiler with lot of [http://software.intel.com/en-us/articles/c0x-features-supported-by-intel-c-compiler/ C++0x features].
+11.0: it is the first C++ compiler version from Intel which has some C++0x [http://software.intel.com/en-us/articles/c0x-features-supported-by-intel-c-compiler/ specific features] (e.g. `static_assert`, `auto`, lambdas, extern templates, `decltype`), but no rvalue references, so it is supported as MSVC2005/2008.
 
-=== Codegear C++ Builder 2009 ===
+12.0: newest C++ compiler with lot of [http://software.intel.com/en-us/articles/c0x-features-supported-by-intel-c-compiler/ C++0x features].
+
+== Codegear C++ Builder 2009 ==
 
 New compiler of the C++ Builder has a [http://docwiki.embarcadero.com/RADStudio/en/C%2B%2B0x_Features_Index lot of C++0x features] ([http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2249.html extended unicode character types] (UTF-16 and UTF-32), `alignof`, `static_assert`, `decltype`, strongly typed enums, extern templates and rvalues).
 
 It id supported only in [http://ontl.googlecode.com/svn/branches/stlx STLx] branch with the external runtime.
 
-=== GCC ===
+== GCC ==
 
 GCC's C++ Frontend has an [http://gcc.gnu.org/projects/cxx0x.html experimental C++0x support] (in 4.3+ version). Compilers prior to 4.3 are not fully supported due to absence of the special built-in type traits.
 
 It is fully supported only in [http://ontl.googlecode.com/svn/branches/stlx STLx] branch with the external C runtime library.
+
+
+== Clang ==
+
+It is a compiler front end for the C, C++, Objective-C, and Objective-C++ programming languages, which uses LLVM as its back end.
+
+Provides support for a [http://clang.llvm.org/cxx_status.html number of features] of C++11.
+
+Planned to use as NTL compiler.
