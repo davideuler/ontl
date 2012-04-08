@@ -68,7 +68,7 @@ Note that *[http://code.google.com/p/ontl/source/browse/trunk/ntl/ trunk/ntl]* c
 || # || <numeric>               || Only `std::accumulate`. ||
 || # || <ostream>               || Almost complete (FP uses `msvcrt`). ||
 || # || <queue>                 || No `priority_queue`. ||
-|| # || <random>                || | Incomplete |
+|| # || <random>                || Incomplete ||
 || # || <ratio>                 || Complete. ||
 || # || <regex>                 || ||
 || # || <set>                   || Complete. ||
