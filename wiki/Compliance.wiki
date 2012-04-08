@@ -50,25 +50,25 @@ Note that *[http://code.google.com/p/ontl/source/browse/trunk/ntl/ trunk/ntl]* c
 || # || <forward_list>          || tested; incomplete (no `sort()`) ||
 || # || <fstream>               || Almost complete (no seekpos) ||
 || # || <functional>            || almost complete, but arguments count are limited (in development) ||
-|| # || <future>                || Not confirming the N3000 ||
+|| # || <future>                || Not conforming the N3000 ||
 || # || <initializer_list>      || No compilers to support it (except GCC 4.4+). ||
 || # || <iomanip>               || Complete. ||
 || # || <ios>                   || No `ios_base` callbacks. ||
 || # || <iosfwd>                || Complete. ||
 || # || <iostream>              || Complete for console io. ||
-|| # || <istream>               || Almost complete (no FP). ||
+|| # || <istream>               || Almost complete (FP uses `msvcrt`). ||
 || # || <iterator>              || Complete. ||
 || # || <limits>                || Complete except of `numeric_limits<long double>::infinity()` & Co for ICC (10 bytes in size). ||
 || # || <list>                  || No `merge` yet. ||
 || # || <locale>                || Only "C" locale (no time, collate, messages and w/o locale mixins) ||
-|| # || <map>                   || As RB tree now; untested ||
+|| # || <map>                   || `std::map` only ||
 || # || <memory>                || Incomplete (no `scoped_allocator`). ||
 || # || <mutex>                 || Complete (see `functional` for `call_once`) ||
 || # || <new>                   || Complete. ||
 || # || <numeric>               || Only `std::accumulate`. ||
-|| # || <ostream>               || Almost complete (no FP). ||
+|| # || <ostream>               || Almost complete (FP uses `msvcrt`). ||
 || # || <queue>                 || No `priority_queue`. ||
-|| # || <random>                || ||
+|| # || <random>                || | Incomplete |
 || # || <ratio>                 || Complete. ||
 || # || <regex>                 || ||
 || # || <set>                   || Complete. ||
@@ -88,7 +88,7 @@ Note that *[http://code.google.com/p/ontl/source/browse/trunk/ntl/ trunk/ntl]* c
 || # || <unordered_set>         || Complete, untested. ||
 || # || <utility>               || Complete. ||
 || # || <valarray>              || Not planned in near future. ||
-|| # || <vector>                || Note about stl-exception-safety branch. ||
+|| # || <vector>                || Without `emplace`. ||
 
 ==C++ Headers for C Library Facilities (§17.6.1.2/3)==
 || # || <cassert>   || Complete. ||
@@ -138,6 +138,6 @@ NTL contains following separate components, which are based on TR1:
 The TR2 was cancelled in '08 and not published, but you can find C++0x Library extensions in the wishlist.
 
 NTL contains following separate components, which are based on TR2:
-|| # || [http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2006/n1975.html Filesystem Library Proposal] || [http://code.google.com/p/ontl/source/browse/branches/x64/ntl/stlx/ext/tr2/filesystem.hxx <tr2/filesystem.hxx>] ||
+|| # || [http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2006/n1975.html Filesystem Library Proposal] || [http://code.google.com/p/ontl/source/browse/branches/x64/ntl/stlx/ext/tr2/filesystem.hxx <tr2/filesystem.hxx>] (old), [http://code.google.com/p/ontl/source/browse/branches/devel/ntl/stlx/ext/tr2/files.hxx <tr2/files.hxx>] ||
 || # || [http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2006/n2101.html Hierarchical Data Structures] || planned ||
-|| # || [http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2006/n2054.pdf Networking Library Proposal] || planned for KM, work in progress ||
+|| # || [http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2006/n2054.pdf Networking Library Proposal] || Works with winsock, planned for KM. ||
