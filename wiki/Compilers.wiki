@@ -4,7 +4,7 @@
 
 = Supported compilers =
  * MSVC 2005 SP1 (v14.00.50727) or newer 
- * MSVC 2010 (v16), 2011 (v17)
+ * MSVC 2010 (v16), 2011 (v17), 2013 (v18)
  * Intel C++ 10.0 (or older?), 11.0, 12.0
  * Codegear C++ 2009 (v6.16) or newer
  * GCC 4.2 or newer
@@ -22,6 +22,7 @@ Provides [http://blogs.msdn.com/b/vcblog/archive/2010/04/06/c-0x-core-language-f
 
 2011 have [http://blogs.msdn.com/b/vcblog/archive/2011/09/12/10209291.aspx more C++11 features].
 
+2013 [http://blogs.msdn.com/b/vcblog/archive/2013/06/27/what-s-new-for-visual-c-developers-in-vs2013-preview.aspx features].
 
 Fully supported and recommended compilers.
 
