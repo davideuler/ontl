@@ -22,7 +22,9 @@ Provides [http://blogs.msdn.com/b/vcblog/archive/2010/04/06/c-0x-core-language-f
 
 2011 have [http://blogs.msdn.com/b/vcblog/archive/2011/09/12/10209291.aspx more C++11 features].
 
-2013 [http://blogs.msdn.com/b/vcblog/archive/2013/06/27/what-s-new-for-visual-c-developers-in-vs2013-preview.aspx features].
+2013 [http://blogs.msdn.com/b/vcblog/archive/2013/06/27/what-s-new-for-visual-c-developers-in-vs2013-preview.aspx preview], [http://msdn.microsoft.com/en-us/library/vstudio/bb386063(v=vs.120).aspx RC] features.
+
+Future versions [https://udta1g.blu.livefilestore.com/y2pMXBJL7l2a5UOf_pXnLXghSUhPWK8w5skFyc50SVFcMjVwa1guQnM6R0NNLN1buBUNPGbLBejpYXXBXSbqshQKKWVfQxvJjk2jGRPPbL-UBu7gaao4RxifZgPXY5ksdei/image1.png?psid=1 roadmap].
 
 Fully supported and recommended compilers.
 
