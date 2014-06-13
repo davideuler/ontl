@@ -16,13 +16,15 @@
 
 Fully supported, but no C++0x specific features available (however some of them are emulated, such as `static_assert`, `nullptr`, alignment).
 
-== MSVC 2010, 2011 ==
+== MSVC 2010 and higher ==
 
 Provides [http://blogs.msdn.com/b/vcblog/archive/2010/04/06/c-0x-core-language-features-in-vc10-the-table.aspx part of C++0x Core Language features].
 
-2011 have [http://blogs.msdn.com/b/vcblog/archive/2011/09/12/10209291.aspx more C++11 features].
+2012 have [http://blogs.msdn.com/b/vcblog/archive/2011/09/12/10209291.aspx more C++11 features].
 
-2013 [http://blogs.msdn.com/b/vcblog/archive/2013/06/27/what-s-new-for-visual-c-developers-in-vs2013-preview.aspx preview], [http://msdn.microsoft.com/en-us/library/vstudio/hh409293(v=vs.120).aspx RC] features.
+2013 [http://blogs.msdn.com/b/vcblog/archive/2013/06/27/what-s-new-for-visual-c-developers-in-vs2013-preview.aspx preview], [http://msdn.microsoft.com/en-us/library/vstudio/hh409293(v=vs.120).aspx RC], [http://blogs.msdn.com/b/vcblog/archive/2013/12/02/c-11-14-core-language-features-in-vs-2013-and-the-nov-2013-ctp.aspx RTM and CTP] features.
+
+2014 [http://blogs.msdn.com/b/vcblog/archive/2014/06/11/c-11-14-feature-tables-for-visual-studio-14-ctp1.aspx CTP1]
 
 Future versions [https://udta1g.blu.livefilestore.com/y2pMXBJL7l2a5UOf_pXnLXghSUhPWK8w5skFyc50SVFcMjVwa1guQnM6R0NNLN1buBUNPGbLBejpYXXBXSbqshQKKWVfQxvJjk2jGRPPbL-UBu7gaao4RxifZgPXY5ksdei/image1.png?psid=1 roadmap].
 
@@ -32,11 +34,11 @@ Fully supported and recommended compiler.
 
 It is compatible with the MSVC2005 and 2008, so it is fully supported except of 10 bytes size `double` type (disabled by default).
 
-== Intel C++ 11.0, 12.0 ==
+== Intel C++ 11.0 and higher ==
 
 11.0: it is the first C++ compiler version from Intel which has some C++0x [http://software.intel.com/en-us/articles/c0x-features-supported-by-intel-c-compiler/ specific features] (e.g. `static_assert`, `auto`, lambdas, extern templates, `decltype`), but no rvalue references, so it is supported as MSVC2005/2008.
 
-12.0: newest C++ compiler with lot of [http://software.intel.com/en-us/articles/c0x-features-supported-by-intel-c-compiler/ C++0x features].
+12.0 and higher: newest C++ compiler with lot of [http://software.intel.com/en-us/articles/c0x-features-supported-by-intel-c-compiler/ C++0x features].
 
 == Codegear C++ Builder 2009 ==
 
